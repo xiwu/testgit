@@ -1,5 +1,5 @@
 #ftp component readLock=changed
-##Issue
+###Issue
 I am using the sftp component consumer. I have the following route:
 
 ```
@@ -13,11 +13,11 @@ I am using the sftp component consumer. I have the following route:
 
 I want it to wait till the file is finshed being writen to by another program on the ftp file server. The option seem easy to impliment. but it not doing what I think. What am i doing doing wrong? The consumer xml is not throwen ing a error and it runs. It just trys to consume the file to early.
 
-##Environment
+###Environment
 
 - JBoss Fuse 6.0
 
-##Solution
+###Solution
 You need to set the option 
 `readLock=changed`
 
